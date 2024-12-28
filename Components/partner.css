@@ -1,0 +1,29 @@
+:root{
+  --light-blue-background:#8da9c4;
+  --blue-primary:#134074;
+  --blue-background:#13315c;
+  --dark-blue:#0b2545;
+  --white-background:#eef4ed;
+  --light-blue-background:#8da9c4;
+}
+.Partner{
+  background-color: #eef4ed;
+  margin: 10px;
+  padding: 10px;
+border: 1px solid var(--white-background);
+}
+.Partners_card{
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.Partner_Heading{
+  text-align: center;
+
+}
+.Partner_cantainer{
+  background-color:var(--white-background) ;
+  color: var(--blue-primary);
+}

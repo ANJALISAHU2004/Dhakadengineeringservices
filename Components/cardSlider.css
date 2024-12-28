@@ -1,0 +1,422 @@
+@import url("https:fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap");
+:root{
+  --light-blue-background:#eef4ed;
+  --blue-primary:#134074;
+  --blue-background:#13315c;
+  --dark-blue:#0b2545;
+  --white-background:#eef4ed;
+  --light-blue-background:#eef4ed;
+}
+:root {
+  /* Colors */
+  --brand-color: var(--blue-primary);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  /* Fonts */
+  --font-title: "Montserrat", sans-serif;
+  --font-text: "Lato", sans-serif;
+}
+.Heading_PROJECTS{
+  text-align: center;
+  padding: 3%;
+    
+    font-size: 170px;
+    color: var(--white-background);
+    text-transform: uppercase;
+    line-height: 1;
+    background-color: #134074;
+     /* font-size: 250px;
+    font-style: normal;
+    font-weight: 400;
+   
+     color: rgba(9, 64, 103, 0.6);;
+   
+    top: -40px;
+    left: 0;
+    width: 100%;
+    user-select: none;
+    pointer-events: none; */
+}
+/* RESET */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h2,
+p {
+  margin: 0;
+}
+
+/* GLOBAL STYLES */
+.Card_body {
+  display: flex;
+  justify-content: space-around;
+  place-items: center;
+  height: 70vh;
+}
+ /* .CarBox{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  overflow-x: auto;
+  -ms-overflow-style: none;  /* IE and Edge */
+  /*scrollbar-width: none; 
+  } 
+  .car-box{
+    text-align: center; 
+  }
+  .ag-format-container {
+   
+    overflow-x: auto;
+  scrollbar-width: none; 
+  width: 100%;
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+   
+    margin: 0 auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  } */
+.Card_body h2 {
+  font-size: 2.25rem;
+  font-family: var(--font-title);
+  color: var(--white);
+  line-height: 1.1;
+}
+
+.Card_body p {
+  font-family: var(--font-text);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--white);
+}
+
+.flow1 > * + * {
+  margin-top: var(--flow-space, 1em);
+}
+
+/* CARD COMPONENT */
+
+.card1 {
+  display: grid;
+  place-items: center;
+  width: 80vw;
+  max-width: 25.875rem;
+ height:   30rem;
+  overflow: hidden;
+  border-radius: 1.625rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+}
+
+.card1 > * {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.card__background1 {
+  object-fit: cover;
+  max-width: 100%;
+  height: 100%;
+  border-radius: 5%;
+}
+
+.card__content1 {
+  --flow-space: 0.9375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex-end;
+  height: 55%;
+  padding: 12% 1.25rem 1.875rem;
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 0%, 0) 0%,
+    hsla(0, 0%, 0%, 0.3) 10%,
+    hsl(0, 0%, 0%) 100%
+  );
+}
+
+.card__content--container1 {
+  --flow-space: 1.25rem;
+}
+
+.card__title1 {
+  position: relative;
+  width: fit-content;
+  width: -moz-fit-content; /* Prefijo necesario para Firefox  */
+}
+
+.card__title1::after {
+  content: "";
+  position: absolute;
+  height: 0.3125rem;
+  width: calc(100% + 1.25rem);
+  bottom: calc((1.25rem - 0.5rem) * -1);
+  left: -1.25rem;
+  background-color: var(--brand-color);
+}
+
+.card__button1 {
+  padding: 0.75em 1.6em;
+  width: fit-content;
+  width: -moz-fit-content; /* Prefijo necesario para Firefox  */
+  font-variant: small-caps;
+  font-weight: bold;
+  border-radius: 0.45em;
+  border: none;
+  background-color: var(--brand-color);
+  font-family: var(--font-title);
+  font-size: 1.125rem;
+  color: var(--white-background);
+}
+
+.card__button1:focus {
+  outline: 2px solid rgb(251, 247, 247);
+  outline-offset: -5px;
+}
+
+@media (any-hover: hover) and (any-pointer: fine) {
+  .card__content1 {
+    transform: translateY(62%);
+    transition: transform 500ms ease-out;
+    transition-delay: 500ms;
+  }
+
+  .card__title1::after {
+    opacity: 0;
+    transform: scaleX(0);
+    transition: opacity 1000ms ease-in, transform 500ms ease-out;
+    transition-delay: 500ms;
+    transform-origin: right;
+  }
+
+  .card__background1 {
+    transition: transform 500ms ease-in;
+  }
+
+  .card__content--container1 > :not(.card__title1),
+  .card__button1 {
+    opacity: 0;
+    transition: transform 500ms ease-out, opacity 500ms ease-out;
+  }
+
+  .card1:hover,
+  .card1:focus-within {
+    transform: scale(1.05);
+    transition: transform 500ms ease-in;
+  }
+
+  .card1:hover .card__content1,
+  .card1:focus-within .card__content1 {
+    transform: translateY(0);
+    transition: transform 500ms ease-in;
+  }
+
+  .card1:focus-within .card__content1 {
+    transition-duration: 0ms;
+  }
+
+  .card1:hover .card__background1,
+  .card1:focus-within .card__background1 {
+    transform: scale(1.3);
+  }
+
+  .card1:hover .card__content--container1 > :not(.card__title1),
+  .card1:hover .card__button1,
+  .card1:focus-within .card__content--container1 > :not(.card__title1),
+  .card1:focus-within .card__button1 {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+    transition-delay: 1000ms;
+  }
+
+  .card1:hover .card__title1::after,
+  .card1:focus-within .card__title1::after {
+    opacity: 1;
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: opacity 500ms ease-in, transform 500ms ease-in;
+    transition-delay: 500ms;
+  }
+}
+
+.CarBox{
+  background-color: #134074;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: auto;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none; 
+  }
+  .car-box{
+    height: 100px;
+    text-align: center; 
+  }
+  .ag-format-container {
+   /* height: 700px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: auto;
+    scrollbar-width: none; 
+    width: auto;
+    margin: 0 auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  
+  /* body {
+     background-color: #000; 
+  } */
+  .ag-courses_box {
+  height: 750px;
+  margin-top: 10px;
+     display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+     -ms-flex-align: start;
+    align-items: flex-start;
+   /*-ms-flex-wrap: wrap;
+    flex-wrap: wrap;  */
+    padding: 50px 0; 
+  }
+  .ag-courses_item {
+    height: 100px;
+    -ms-flex-preferred-size: calc(33.33333% - 30px);
+    flex-basis: calc(25% - 30px);
+    margin: 0 15px 30px;
+    overflow: hidden;
+    border-radius: 28px;
+  }
+  .ag-courses-item_link {
+    display: block;
+    padding: 30px 20px;
+    background-color: #121212;
+  
+    overflow: hidden;
+  
+    position: relative;
+  }
+  .ag-courses-item_link:hover,
+  .ag-courses-item_link:hover .ag-courses-item_date {
+    text-decoration: none;
+    color: #FFF;
+  }
+  .ag-courses-item_link:hover .ag-courses-item_bg {
+    -webkit-transform: scale(10);
+    -ms-transform: scale(10);
+    transform: scale(10);
+  }
+  .ag-courses-item_title {
+    min-height: 87px;
+    margin: 0 0 25px;
+  
+    overflow: hidden;
+  
+    font-weight: bold;
+    font-size: 30px;
+    color: #FFF;
+  
+    z-index: 2;
+    position: relative;
+  }
+  .ag-courses-item_date-box {
+    font-size: 18px;
+    color: #FFF;
+  
+    z-index: 2;
+    position: relative;
+  }
+  .ag-courses-item_date {
+    font-weight: bold;
+    color: var(--blue-primary);
+  
+    -webkit-transition: color .5s ease;
+    -o-transition: color .5s ease;
+    transition: color .5s ease
+  }
+  .ag-courses-item_bg {
+    height: 128px;
+    width: 128px;
+    background-color:var(--light-blue-background);
+  
+    z-index: 1;
+    position: absolute;
+    top: -75px;
+    right: -75px;
+  
+    border-radius: 50%;
+  
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+  
+  
+  @media only screen and (max-width: 979px) {
+    .Heading_PROJECTS{
+      margin-top: 5%;
+      padding: 5%;
+      font-size: 4em;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: #eef4ed;
+    }
+    .ag-courses_item {
+      -ms-flex-preferred-size: calc(50% - 30px);
+      flex-basis: calc(50% - 30px);
+    }
+    .ag-courses-item_title {
+      font-size: 24px;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .ag-format-container {
+      width: 96%;
+    }
+    .Heading_PROJECTS{
+      margin-top: 5%;
+      padding: 5%;
+      font-size: 4em;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: #eef4ed;
+    }
+  }
+  @media only screen and (max-width: 639px) {
+    .Heading_PROJECTS{
+      margin-top: 5%;
+      padding: 5%;
+      font-size: 4em;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: #eef4ed;
+    }
+    .ag-courses_item {
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+    }
+    .ag-courses-item_title {
+      min-height: 72px;
+      line-height: 1;
+  
+      font-size: 24px;
+    }
+    .ag-courses-item_link {
+      padding: 22px 40px;
+    }
+    .ag-courses-item_date-box {
+      font-size: 16px;
+    }
+  }
+
+  

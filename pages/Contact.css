@@ -1,0 +1,41 @@
+.Contact_Mdiv{
+  display: flex;
+   justify-content: space-between; align-items: center;
+    border: 2px solid #ccc; 
+    border-radius: 10px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: hidden;
+     max-width: 100%;
+     margin: 20px auto;
+}
+.Contact_Mdiv_h2{
+  text-align: center;
+  margin: 5%;
+  font-size: 10vh;
+}
+.Contact_Mdiv h3{
+  text-align: left;
+  margin: 5%;
+  font-size: 5vh;
+}
+.Contact_Mdiv p{
+  font-size: larger;
+}
+.Contact_Mdivl{
+
+  /* text-align: left; */
+  flex: 1; padding: 20px;
+  display: flex;
+   justify-content: center; align-items: center;
+}
+.Contact_Mdivr{
+  
+  flex: 1; padding: 20px;
+ 
+}
+.Contact_Mdivr img{
+  max-width: 100%; height: auto; display: block; border-radius: 10px;
+  /* border-radius: 1pc ;
+  height: 100vh;
+  width: 45vw; */
+}

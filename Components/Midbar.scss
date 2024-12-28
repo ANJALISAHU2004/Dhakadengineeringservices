@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@keyframes showTopText {
+  0% { transform: translate3d(0, 100%, 0); }
+  40%, 60% { transform: translate3d(0, 50%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes showBottomText {
+  0% { transform: translate3d(0, -100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+:root{
+  --light-blue-background:#8da9c4;
+  --blue-primary:#134074;
+  --blue-background:#13315c;
+  --dark-blue:#0b2545;
+  --white-background:#eef4ed;
+  --light-blue-background:#8da9c4;
+}
+.Midbar_banner{
+
+background-color:var(--blue-primary) ;
+}
+.Midbar_banner-box {
+  
+  padding: 60px;
+  position: relative;
+  z-index: 1;
+}
+.Midbar_banner-box h1 {
+  position: absolute;
+  top: 11%;
+  left: 0;
+  font-size: 339px;
+  line-height: 370px;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-image: url(https://www.yudiz.com/codepen/interior-design/mask-img.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  opacity: 0.6;
+  color: var(--white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  font-family: "Righteous", cursive;
+  z-index: -1;
+}
+.animated-title {
+  color: var(--white-background);
+  font-family: Roboto, Arial, sans-serif;
+  height: 90vmin;
+  left: 20%;
+  position: absolute;
+   top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vmin;
+}
+.animated-title > div {
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+.animated-title > div div {
+  font-size: 12vmin;
+  padding: 2vmin 0;
+  position: absolute;
+}
+.animated-title > div div span {
+  display: block;
+}
+.animated-title > div.text-top {
+  border-bottom: 1vmin solid var(--light-blue-background);
+  top: 0;
+}
+.animated-title > div.text-top div {
+  animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+.animated-title > div.text-top div span:first-child {
+  color: var(--light-blue-background);
+}
+.animated-title > div.text-bottom {
+  bottom: 0;
+}
+.animated-title > div.text-bottom div {
+  animation: showBottomText 0.5s;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  top: 0;
+  transform: translate(0, -100%);
+}
+@media screen and (max-width: 767px) {
+  .Midbar_banner .banner-img {
+      margin-top: 60px;
+  }
+  .animated-title {
+    color: var(--white-background);
+    font-family: Roboto, Arial, sans-serif;
+    height: 90vmin;
+    left: 20%;
+    position: absolute;
+    top: 63%;
+    transform: translate(-50%, -50%);
+    width: 90vmin;}
+    .img-fluid {
+      margin-top: -20px;
+      border-radius: 50px;
+      max-width: 100%;
+      height: auto;
+      border: none;
+      margin-left: 76px;
+  }
+}

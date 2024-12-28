@@ -1,0 +1,128 @@
+
+:root{
+  --light-blue-background:#8da9c4;
+  --blue-primary:#134074;
+  --blue-background:#13315c;
+  --dark-blue:#0b2545;
+  --white-background:#eef4ed;
+  --light-blue-background:#8da9c4;
+}
+#AboutUsHeader_about {
+  height: 100%;
+  min-height: 100vh;
+  font-size: 1.4rem;
+  position: relative;
+  background:var(--blue-primary); /*#fafafa;*/
+  clip-path: polygon(0 0, 20% 5%, 100% 0, 100% 100%, 80% 95%, 0 100%);
+  z-index: 5;
+  background:var(--blue-primary) url(https://th.bing.com/th/id/R.c01549258ae3f84e27b99adbcec4fd08?rik=iTE%2bIww97EY7qQ&riu=http%3a%2f%2fmedia.architecturaldigest.com%2fphotos%2f576da9fe5ea3e586576ec4b2%2fmaster%2fpass%2fbest-tall-buildings-2016-03.jpg&ehk=4KMtiLvw6JmHQZTsBmKWJWJMkJ5m749FHJeE%2bY9I6fM%3d&risl=1&pid=ImgRaw&r=0) center right no-repeat;
+  background-attachment: fixed;
+}
+
+#AboutUsHeader_about .wrapper {
+  padding: 1rem 10rem 12rem;
+  height: 100%;
+  min-height: 100vh;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+#AboutUsHeader_about article {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  padding: 3rem 0;
+
+}
+
+#AboutUsHeader_about .title {
+  grid-column-end: span 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 5em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #eef4ed;
+}
+
+#AboutUsHeader_about .title h3 {
+  font-size: 0.5em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #eef4ed;
+}
+
+#AboutUsHeader_about .separator {
+  background: whitesmoke;
+  width: 150px;
+  height: 2px;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+#AboutUsHeader_about .subtitle {
+  font-size: 1.6rem;
+  text-align: center;
+
+  padding-bottom: 1.5rem;
+ 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #eef4ed;
+}
+
+#AboutUsHeader_about p {
+  padding-bottom: 1.5rem;
+  color: whitesmoke;
+  line-height: 1.9rem;
+}
+#AboutUsHeader_about ul{
+  text-align: center;
+  list-style-position: inside;
+}
+#AboutUsHeader_about ul li{
+  padding-bottom: 1.5rem;
+  color: whitesmoke;
+  line-height: 1.9rem;
+  align-self: center;
+  /* display: inline-block; */
+ /* text-align: left; */
+  /* text-align: center; */
+}
+
+#AboutUsHeader_about .desc.full {
+  grid-column-end: span 4;
+  margin-bottom: 2rem;
+}
+
+#AboutUsHeader_about .desc {
+  grid-column-end: span 2;
+  background: #13315caa;
+  padding: 2rem;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 1149px) {
+  #AboutUsHeader_about article {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+  #AboutUsHeader_about .desc.full {
+    grid-column-end: -1;
+  }
+
+  #AboutUsHeader_about .desc {
+    grid-column-end: -1;
+  }
+}
+@media only screen and (max-width: 949px) {
+  #AboutUsHeader_about {
+    clip-path: polygon(0 0, 20% 2%, 100% 0, 100% 100%, 80% 98%, 0 100%);
+    background-position: top left;
+    background-size: cover;
+  }
+}
+@media only screen and (max-width: 649px) {
+  #AboutUsHeader_about .wrapper {
+    padding: 1rem 2rem 8rem;
+  }
+}
+

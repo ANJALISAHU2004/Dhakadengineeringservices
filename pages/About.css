@@ -1,0 +1,60 @@
+:root{
+  --light-blue-background:#8da9c4;
+  --blue-primary:#134074;
+  --blue-background:#13315c;
+  --dark-blue:#0b2545;
+  --white-background:#eef4ed;
+  --light-blue-background:#8da9c4;
+}
+.bar {
+  color: var(--white-background);
+  background:var(--blue-primary);
+  height: auto;
+  text-align: center;
+  text-decoration: double;
+
+    padding: 2%;
+    /* font-size: 5em; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.bar h2 {
+  font-size: 3.5rem;
+  padding: 1%;
+}
+
+.bar p {
+  padding: 1%;
+  color: whitesmoke;
+  text-align: center;
+  text-decoration: double;
+}
+
+
+/* Our    capabilities */
+.OurCapab{
+text-align: center;
+}
+.OurCapab h2{
+padding: 2%;
+font-size: 5em;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.OurCapabdiv{
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.OurCapabdiv2{
+  margin: 3%;
+}
+.OurCapabdiv2 ul {
+  list-style: none;
+}
+.OurCapabdiv2 ul li{
+  padding: 30%;
+  font-size: 1.5rem;
+}

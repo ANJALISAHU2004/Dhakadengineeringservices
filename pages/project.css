@@ -1,0 +1,542 @@
+
+:root{
+  --light-blue-background:#8da9c4;
+  --blue-primary:#134074;
+  --blue-background:#13315c;
+  --dark-blue:#0b2545;
+  --white-background:#eef4ed;
+  --light-blue-background:#8da9c4;
+}
+.projects-section .compy-box::before {
+  left: -30px;
+  top: -30px;
+  position: absolute;
+  content: "";
+  border: 2px solid var(--light-blue-background);
+  height: 100%;
+  width: 100%;
+  /* height: 100px;
+  width: 100px; */
+  z-index: 1;
+  margin-top: 14%;
+}
+.S2projects-section .compy-box::before {
+  right: -30px;
+  bottom: -30px;
+  position: absolute;
+  content: "";
+  border: 2px solid var(--light-blue-background);
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.S2projects-section .compy-box
+{
+  margin: 9%;
+}
+.projects-section .compy-box img {
+  height: 100%;
+  width: 100%;
+  
+  object-fit: cover;
+  object-position: center;
+  margin-top: 14%;
+}
+.S2projects-section {
+  padding: 217px 0 0;
+  margin-top: 100px;
+  
+}
+
+.S2Compsec_common-btn {
+  margin: 0;
+  padding: 2% 5%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--white);
+  background-color: var(--color-5);
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  z-index: 1;
+  transition: all 0.15s;
+  user-select: none;
+}
+
+.S2Compsec_common-btn:hover::before {
+  top: 0;
+  left: 0;
+}
+
+
+.S2Compsec_common-btn::before {
+  left: 6px;
+  top: 6px;
+  position: absolute;
+  content: "";
+  border: 1px solid var(--color-5);
+  height: 100%;
+  width: 100%;
+  transition: all 0.15s;
+  z-index: -1;
+}
+
+.S2Compsec_common-btn_div{
+  display:flex;
+  float:right;
+  text-align:center;
+  margin: 10%;
+}
+
+
+
+
+
+.S2company-section{
+  background-color: var(--white-background);
+}
+
+
+
+@media screen and (max-width: 1399px) {
+  /* common */
+  .S2container {
+    max-width: 1140px;
+  }
+  .projects-section .title{
+    margin-top: 5%;
+    padding: 5%;
+    font-size: 4em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #8da9c4;
+  }
+}
+@media screen and (max-width: 1199px) {
+  /* common */
+  .projects-section .title{
+    margin-top: 5%;
+    padding: 5%;
+    font-size: 4em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #8da9c4;
+  }
+  .S2container {
+    max-width: 960px;
+  }
+  h2.S2title {
+    font-size: 148px;
+    top: -20px;
+  }
+  .S2paragraph p:first-child:first-letter {
+    font-size: 22px;
+    line-height: 34px;
+  }
+
+  /* button */
+  .S2Compsec_common-btn {
+    padding: 14px 20px;
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .S2Compsec_common-btn img {
+    width: 20px;
+  }
+
+
+  /* company */
+  .S2compy-box::before {
+    left: 24px;
+    top: -24px;
+  }
+
+
+
+  /* Contact */
+  .S2contact-us h4 {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 991px) {
+  /* common */
+  .projects-section .title{
+    margin-top: 5%;
+    padding: 5%;
+    font-size: 4em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #8da9c4;
+  }
+  .S2container {
+    max-width: 720px;
+  }
+  h2.S2title {
+    font-size: 110px;
+    top: -17px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+ 
+
+  /* Company */
+  .S2company-section {
+    padding-top: 156px;
+  }
+
+
+
+ 
+
+}
+@media screen and (max-width: 767px) {
+  /* common */
+  .projects-section .title{
+    margin-top: 5%;
+    padding: 5%;
+    font-size: 4em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #8da9c4;
+  }
+  .S2container {
+    max-width: calc(100% - 12px);
+  }
+  h2.S2title {
+    font-size: 52px;
+    top: -8px;
+  }
+  p {
+    margin-bottom: 16px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .S2paragraph p:first-child:first-letter {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  /* button */
+  .S2Compsec_common-btn {
+    padding: 10px 16px;
+    font-size: 12px;
+    line-height: 19px;
+  }
+  .S2Compsec_common-btn::before {
+    top: 3px;
+    left: 3px;
+  }
+  .S2Compsec_common-btn img {
+    width: 16px;
+  }
+
+
+
+  /* company */
+  .S2company-section {
+    padding-top: 60px;
+  }
+  .S2compy-box {
+    margin-right: 16px;
+  }
+  .S2compy-box::before {
+    left: 16px;
+    top: -16px;
+  }
+
+}
+
+#compDescription p{
+padding: 5%;
+}
+#S2compDescription p{
+  padding: 5%;
+}
+
+
+
+.projects-section {
+  padding: 217px 0 0;
+  margin-top: 100px;
+  
+}
+.project-box {
+  width: 100%;
+  height: 334px;
+  position: relative;
+}
+.project-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.project-box.big {
+  height: 100%;
+}
+.project-content {
+  padding: 2px 32px;
+  position: relative;
+  z-index: 1;
+}
+.project-content::before,
+.project-content::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 130px;
+  background: var(--color-3);
+}
+.project-content::after {
+  right: 14px;
+  bottom: 3px;
+}
+.project-content::before {
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.project-content .bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.project-content p {
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 26px;
+}
+.project-content .common-btn {
+  padding: 8px 19px;
+}
+.project-content .common-btn img {
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+.company-section{
+  background-color: var(--white-background);
+}
+
+
+
+@media screen and (max-width: 1399px) {
+  /* common */
+  .projects-section .title{
+    margin-top: 5%;
+    padding: 5%;
+    font-size: 4em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #8da9c4;
+  }
+  .container {
+    max-width: 1140px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  /* common */
+
+  .container {
+    max-width: 960px;
+  }
+  .projects-section .title{
+    margin-top: 5%;
+    padding: 5%;
+    font-size: 4em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #8da9c4;
+  }
+  .paragraph p:first-child:first-letter {
+    font-size: 22px;
+    line-height: 34px;
+  }
+
+  /* button */
+  .Compsec_common-btn {
+    padding: 14px 20px;
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .Compsec_common-btn img {
+    width: 20px;
+  }
+
+
+  /* company */
+  .compy-box::before {
+    left: 24px;
+    top: -24px;
+  }
+
+  /* Projects */
+  .project-content p {
+    margin-bottom: 4px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .project-content .Compsec_common-btn {
+    padding: 6px 16px;
+  }
+
+  /* Contact */
+  .contact-us h4 {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 991px) {
+
+  .container {
+    max-width: 720px;
+  }
+  .projects-section .title{
+    margin-top: 5%;
+    padding: 5%;
+    font-size: 4em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #8da9c4;
+  }
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+ 
+
+  /* Company */
+  .company-section {
+    padding-top: 156px;
+  }
+
+
+
+  /* Project */
+  .projects-section {
+    padding-top: 110px;
+  }
+  .project-box {
+    height: 195px;
+    padding-inline: 20px;
+  }
+  .project-content::before,
+  .project-content::after {
+    width: 105px;
+  }
+  .project-content::before {
+    top: 8px;
+  }
+  .project-content p {
+    font-size: 10px;
+    line-height: 16px;
+  }
+  .project-content .Compsec_common-btn {
+    padding: 2px 10px;
+  }
+  .project-content .Compsec_common-btn img {
+    width: 14px;
+  }
+  .project-content .Compsec_common-btn::before {
+    top: 4px;
+    left: 4px;
+  }
+
+}
+@media screen and (max-width: 767px) {
+  /* common */
+  .container {
+    max-width: calc(100% - 12px);
+  }
+  .projects-section .title{
+    margin-top: 5%;
+    padding: 5%;
+    font-size: 4em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #8da9c4;
+  }
+  p {
+    margin-bottom: 16px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .paragraph p:first-child:first-letter {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  /* button */
+  .Compsec_common-btn {
+    padding: 10px 16px;
+    font-size: 12px;
+    line-height: 19px;
+  }
+  .Compsec_common-btn::before {
+    top: 3px;
+    left: 3px;
+  }
+  .Compsec_common-btn img {
+    width: 16px;
+  }
+
+
+
+  /* company */
+  .company-section {
+    padding-top: 60px;
+  }
+  .compy-box {
+    margin-right: 16px;
+  }
+  .compy-box::before {
+    left: 16px;
+    top: -16px;
+  }
+
+
+
+  /* projects */
+  .projects-section {
+    padding-top: 72px;
+  }
+  .project-box,
+  .project-box.big {
+    height: 158px;
+  }
+  .project-box {
+    padding-inline: 2px;
+  }
+  .project-content p {
+    font-size: 8px;
+    line-height: 13px;
+  }
+  .project-content .Compsec_common-btn {
+    padding: 1px 7px;
+    margin-right: 14px;
+  }
+  .project-content .Compsec_common-btn img {
+    width: 12px;
+  }
+  .project-content .Compsec_common-btn::before {
+    top: 3px;
+    left: 3px;
+  }
+
+ 
+
+}

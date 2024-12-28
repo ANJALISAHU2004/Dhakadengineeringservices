@@ -1,0 +1,123 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap");
+$primaryFont: "Fredoka", sans-serif;
+$backgroundColor: #eef4ed;
+$primaryColor: #8da9c4;
+
+$light-blue-background: #8da9c4;
+$blue-primary: #134074;
+$blue-background: #13315c;
+$dark-blue: #0b2545;
+$white-background: #eef4ed;
+
+.CoreValues {
+  background-color: #13315c;
+}
+
+.CoreValues_h2 {
+  text-align: center;
+  padding-top: 5%;
+  margin: 50px auto;
+  font-size: 170px;
+  color: $white-background;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  user-select: none;
+  pointer-events: none;
+}
+
+.CoreValues_main_div {
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  background-color: $backgroundColor;
+  border-radius: 30px;
+  text-align: center;
+  padding: 15px;
+  max-width: 375px;
+  margin: 100px auto;
+  box-shadow: 10px 10px 10px adjust-color($backgroundColor, $lightness: -2%);
+
+  .ilustration {
+    margin: 30px;
+
+    lottie-player {
+      width: 200px;
+      height: 200px;
+      border-radius: 100%;
+      overflow: hidden;
+      margin: 0 auto;
+      box-shadow: 20px 20px 20px adjust-color($backgroundColor, $lightness: -2%),
+        -20px -20px 20px adjust-color($backgroundColor, $lightness: 2%);
+    }
+  }
+
+  h3 {
+    font-family: $primaryFont;
+    font-size: 2rem;
+    line-height: 2.2rem;
+    color: $blue-primary;
+    font-weight: bold;
+    margin: 30px 0;
+  }
+
+  p {
+    font-family: $primaryFont;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    color: $dark-blue;
+    margin: 30px auto;
+    max-width: 80%;
+  }
+
+  button {
+    font-family: $primaryFont;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 15px 80px;
+    border-radius: 25px;
+    color: white;
+    border: 0;
+    margin: 30px 0;
+    outline: none;
+    background-color: $blue-primary;
+    box-shadow: 10px 10px 10px adjust-color(rgba($blue-primary, 0.2), $lightness: -2%),
+      -10px -10px 10px adjust-color(rgba($blue-primary, 0.2), $lightness: 2%);
+    transition: ease all 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 20px 20px 20px adjust-color(rgba($primaryColor, 0.1), $lightness: -2%),
+        -20px -20px 20px adjust-color(rgba($primaryColor, 0.1), $lightness: 2%);
+      transform: translateY(-3px);
+    }
+
+    &:active {
+      transform: scale(0.9);
+      box-shadow: inset -1px -1px 3px adjust-color(rgba($primaryColor, 0.3), $lightness: -2%),
+        -20px -20px 20px adjust-color(rgba($primaryColor, 0), $lightness: 2%);
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .CoreValues_h2{
+    margin-top: 5%;
+    padding: 5%;
+    font-size: 7em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #eef4ed;
+  }
+  .CoreValues_main_div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
